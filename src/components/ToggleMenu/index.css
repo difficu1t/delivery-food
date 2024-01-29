@@ -1,0 +1,17 @@
+.menu-container button{
+  padding: 0rem;
+}
+
+.menu-label {
+  color: black;
+  margin: 0;
+}
+
+.menu-item-container {
+  text-decoration: none;
+}
+
+.menu-item {
+  font-weight: 500;
+  margin: 0.75rem;
+}

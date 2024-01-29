@@ -1,19 +1,20 @@
 import { AppShell } from "@mantine/core"
 import SiteHeader from "../SiteHeader"
+import { Outlet } from "react-router-dom"
 
-const MainWrapper = ({ children }: { children: React.ReactNode }) => {
+const ShopWrapper = () => {
 
   return (
     <AppShell
       header={{ height: "5rem" }}
-      // aside={{ breakpoint: "md", width:"15rem" }}
-      // navbar={{ breakpoint: "md", width: "15rem" }}
+      aside={{ breakpoint: "md", width:"15rem" }}
+      navbar={{ breakpoint: "md", width: "15rem" }}
       padding="1.5rem"
     >
       <AppShell.Header px="1.5rem">
         <SiteHeader></SiteHeader>
       </AppShell.Header>
-      {/* <AppShell.Navbar>
+      <AppShell.Navbar>
         <div>
           Navbar 
         </div>
@@ -22,12 +23,12 @@ const MainWrapper = ({ children }: { children: React.ReactNode }) => {
         <div>
           Aside 
         </div>
-      </AppShell.Aside> */}
+      </AppShell.Aside>
       <AppShell.Main mih={2500}>
-        {children}
+        <Outlet/>
       </AppShell.Main>
     </AppShell>
   )
 }
 
-export default MainWrapper
+export default ShopWrapper
