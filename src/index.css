@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0; 
+  background-color: var(--app-backgroud-color);
+}
+
+:root {
+  --app-header-offset: 5rem;
+  --app-backgroud-color: #EEEDEC;
+}

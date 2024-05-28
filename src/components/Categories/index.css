@@ -1,0 +1,39 @@
+.categories {
+  width: 15rem;
+}
+
+.categories__container {
+  position: sticky;
+  top: calc(var(--app-header-offset) + 1.5rem);
+}
+
+.categories__title {
+  padding: 0 1.25rem;
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+
+.categories__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item {
+  width: 100%;
+  background-color: var(--app-backgroud-color);
+  text-align: left;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+}
+
+.categories__item:hover {
+  background-color: lightgray;
+}
+
+.categories__item_selected {
+  background-color: white;
+}
