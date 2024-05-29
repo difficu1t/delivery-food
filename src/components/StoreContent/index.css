@@ -1,5 +1,6 @@
 .content {
   display: flex;
+  position: relative;
   justify-content: center;
-  margin-top: var(--app-header-offset);
+  margin-top: calc(var(--app-header-offset) + 1.5rem);
 }

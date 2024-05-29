@@ -1,0 +1,18 @@
+.categories__item {
+  width: 100%;
+  background-color: var(--app-backgroud-color);
+  text-align: left;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+}
+
+.categories__item:hover {
+  background-color: lightgray;
+}
+
+.categories__item_selected {
+  background-color: white;
+}

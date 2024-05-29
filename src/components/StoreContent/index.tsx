@@ -1,21 +1,22 @@
+import { useTypedSelector } from "../../utils/hooks/useTypedSelector"
+import Cart from "../Cart"
 import Categories from "../Categories"
+import DishesList from "../DishesList"
 import "./index.css"
 
 const StoreContent = () => {
 
+  const { restaurants } = useTypedSelector(state => state.restaurants);
+
   return (
     <div>
       <div className="content">
-        <Categories />
+        <Categories restaurant={restaurants[0]}/>
         {/* 70rem - 1920, 41.5rem 1920< */}
-        <main style={{height: "3000px", width: "41.5rem"}}>
-          Content
-        </main>
-        <aside style={{width: "20rem"}}>
-          SideBar
-        </aside>
+        <DishesList />
+        <Cart />
       </div>
-      <footer style={{height: "700px"}}>
+      <footer style={{height: "700px", backgroundColor: "gray"}}>
         Footer
       </footer>
     </div>
