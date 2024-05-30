@@ -6,7 +6,7 @@ const Menu = ({ restaurant }: { restaurant: Restaurant }) => {
   return (
     <main className="menuContainer">
       {restaurant.categories.map(category => {
-        return <DishesList category={category} key={category.title}/>
+        return <DishesList category={category} restaurant={restaurant} key={category.title}/>
       })}
     </main>
   )

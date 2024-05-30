@@ -13,4 +13,10 @@ export type Dish = {
   id: number;
   name: string;
   price: number;
+  inCart: boolean;
+}
+
+export type AddToCartActions = {
+  restaurantName: string;
+  dishID: number;
 }
