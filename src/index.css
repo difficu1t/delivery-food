@@ -1,11 +1,12 @@
 html, body {
   margin: 0;
   padding: 0; 
-  background-color: var(--app-backgroud-color);
+  background-color: var(--app-background-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
   --app-header-offset: 5rem;
-  --app-backgroud-color: #EEEDEC;
+  --app-background-color: #EEEDEC;
+  --app-theme-color: #F8B602;
 }

@@ -10,9 +10,9 @@
 }
 
 .categories__item:hover {
-  background-color: lightgray;
+  background-color: orange;
 }
 
 .categories__item_selected {
-  background-color: white;
+  background-color: var(--app-theme-color);
 }

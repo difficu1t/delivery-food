@@ -1,0 +1,26 @@
+.quantity {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.quantity__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--app-theme-color);
+  border: none;
+  border-radius: 1rem;
+  padding-top: 2px;
+}
+
+.quantity__button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--app-theme-color);
+  cursor: pointer;
+}

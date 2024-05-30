@@ -1,5 +1,5 @@
 import { Restaurant } from "../../common/types/restaurant";
-import Category from "./Category";
+import CategoryButton from "./CategoryButton";
 import "./index.css"
 
 const Categories = ({ restaurant }: { restaurant: Restaurant }) => {
@@ -10,7 +10,7 @@ const Categories = ({ restaurant }: { restaurant: Restaurant }) => {
         <h2 className="categories__title">Меню</h2>
         <ul className="categories__list">
           {restaurant.categories.map(category => {
-            return <Category category={category} restaurant={restaurant}/>
+            return <CategoryButton category={category} restaurant={restaurant} key={category.title}/>
           })} 
         </ul>
       </div>

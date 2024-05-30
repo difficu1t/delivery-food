@@ -10,6 +10,15 @@
   }
 }
 
+.dishes {
+  margin-bottom: 1rem;
+}
+
+.dishes__categoryTitle {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
 .dishes__dishesList {
   list-style-type: none;
   display: flex;

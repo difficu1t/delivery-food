@@ -1,7 +1,7 @@
 import { useTypedSelector } from "../../utils/hooks/useTypedSelector"
 import Cart from "../Cart"
 import Categories from "../Categories"
-import DishesList from "../DishesList"
+import Menu from "../Menu"  
 import "./index.css"
 
 const StoreContent = () => {
@@ -12,11 +12,10 @@ const StoreContent = () => {
     <div>
       <div className="content">
         <Categories restaurant={restaurants[0]}/>
-        {/* 70rem - 1920, 41.5rem 1920< */}
-        <DishesList />
+        <Menu restaurant={restaurants[0]}/>
         <Cart />
       </div>
-      <footer style={{height: "700px", backgroundColor: "gray"}}>
+      <footer style={{height: "300px", backgroundColor: "white", borderTop: "1px solid lightgray"}}>
         Footer
       </footer>
     </div>

@@ -3,7 +3,7 @@ import { Category, Restaurant } from "../../../common/types/restaurant"
 import { useRestaurantsActions } from "../../../utils/hooks/useRestaurantsActions"
 import "./index.css"
 
-const Category = ({ category, restaurant }: { category: Category, restaurant: Restaurant }) => {
+const CategoryButton = ({ category, restaurant }: { category: Category, restaurant: Restaurant }) => {
 
   const [ itemClass, setItemClass ] = useState("categories__item");
 
@@ -28,4 +28,4 @@ const Category = ({ category, restaurant }: { category: Category, restaurant: Re
   )
 }
 
-export default Category;
+export default CategoryButton;

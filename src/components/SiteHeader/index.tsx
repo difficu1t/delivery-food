@@ -4,7 +4,7 @@ const SiteHeader = () => {
 
   return (
     <header className="header">
-      Tune Food
+      Food Delivery
     </header>
   )
 }

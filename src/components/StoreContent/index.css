@@ -4,3 +4,7 @@
   justify-content: center;
   margin-top: calc(var(--app-header-offset) + 1.5rem);
 }
+
+.menuContainer {
+  padding-bottom: 1rem;
+}

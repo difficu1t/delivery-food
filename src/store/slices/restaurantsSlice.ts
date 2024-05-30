@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { Restaurant } from "../../common/types/restaurant"
-import { chooseRestaurant } from "../../utils/chooseRestaurant"
+import { chooseRestaurant } from "../../utils/RestaurantUtils"
 import { RestaurantActions } from "../../common/types/restaurantsActions"
 
 export type RestaurantsState = {
@@ -13,53 +13,57 @@ const initialState: RestaurantsState = {
       name: "Claude Monet",
       categories: [
         {
-          title: "Drinks",
+          title: "Напитки",
           dishes: [{
-            name: "water",
+            id: 1,
+            name: "Вода",
             price: 50
           },
           {
-            name: "soda",
+            id: 2,
+            name: "Газировка",
             price: 70
           },
           {
-            name: "soda",
+            id: 3,
+            name: "Сода",
             price: 70
           },
           {
-            name: "soda",
+            id: 4,
+            name: "Газировка без сахара",
             price: 70
           },
           {
-            name: "soda",
-            price: 70
-          },
-          {
-            name: "soda",
+            id: 5,
+            name: "Сода без сахара",
             price: 70
           },
         ],
           active: true
         },
         {
-          title: "Breakfast",
+          title: "Завтрак",
           dishes: [{
+            id: 6,
             name: "fried eggs",
             price: 150
           }],
           active: false
         },
         {
-          title: "Lunch",
+          title: "Обед",
           dishes: [{
+            id: 7,
             name: "lasagna",
             price: 240
           }],
           active: false
         },
         {
-          title: "Diner",
+          title: "Ужин",
           dishes: [{
+            id: 8,
             name: "carbonara",
             price: 320
           }],
