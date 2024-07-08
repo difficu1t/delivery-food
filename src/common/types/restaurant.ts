@@ -16,7 +16,7 @@ export type Dish = {
   inCart: boolean;
 }
 
-export type AddToCartActions = {
+export type AddOrRemoveToCartActions = {
   restaurantName: string;
   dishID: number;
 }

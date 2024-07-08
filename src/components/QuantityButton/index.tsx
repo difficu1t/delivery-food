@@ -34,11 +34,11 @@ const QuantityButton = ({ product, restaurant }: { product: Product, restaurant:
     <div className="quantity">
       <div className="quantity__container">
         <button className="quantity__button" onClick={removeProduct}>
-          <IconMinus width="1rem" height="1rem" />
+          <IconMinus width="1rem" height="1rem"/>
         </button>
           {quantity}
         <button className="quantity__button" onClick={addProduct}>
-          <IconPlus width="1rem" height="1rem" />
+          <IconPlus width="1rem" height="1rem"/>
         </button>
       </div>
     </div>

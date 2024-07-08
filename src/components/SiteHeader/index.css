@@ -1,12 +1,23 @@
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   background: #FFFFFF;
   z-index: 1;
   top: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 5rem;
   padding: 0 1.5rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightgray; 
 } 
+
+.header__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

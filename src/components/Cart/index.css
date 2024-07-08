@@ -1,5 +1,5 @@
 .cart {
-  height: calc(100vh - var(--app-header-offset));
+  height: calc(100vh - (var(--app-header-offset) + 3.5rem));
   position: sticky;
   top: calc(var(--app-header-offset) + 1.5rem);
   width: 18rem;
@@ -10,8 +10,10 @@
 }
 
 .cart__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .cart__title {

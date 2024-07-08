@@ -5,6 +5,7 @@ import StoreProvider from './store/storeProvider.tsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
+
   <React.StrictMode>
     <StoreProvider>
       <App /> 
