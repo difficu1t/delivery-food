@@ -16,8 +16,32 @@
   justify-content: space-between;
 }
 
+.cart__header {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .cart__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 1rem;
+}
+
+.cart__clear {
+  font-size: 1rem;
+  font-weight: 500;
+  color: lightgray;
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 0.20rem 0.5rem;
+  cursor: pointer;
+}
+
+.cart__clear:hover {
+  color: black;
+  background-color: #ececec;
+  border: 1px solid #ececec;
+  border-radius: 0.5rem;
 }

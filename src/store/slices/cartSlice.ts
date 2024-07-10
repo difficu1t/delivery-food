@@ -29,7 +29,10 @@ const cartSlice = createSlice({
       state.products[productIndex].quantity > 1 
       ? state.products[productIndex].quantity -= 1
       : state.products.splice(productIndex, 1);
-    } 
+    },
+    clearCart: (state) => {
+      state.products = [];
+    }
   }
 })
 

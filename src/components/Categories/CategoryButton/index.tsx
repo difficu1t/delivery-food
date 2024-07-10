@@ -19,6 +19,10 @@ const CategoryButton = ({ category, restaurant }: { category: Category, restaura
 
   const changeCategoryStatus = () =>  {
     changeCategory({categoryTitle: category.title, restaurantName: restaurant.name});
+    const element = document.getElementById(`${category.title}`);
+    if(element) {
+      window.scrollTo(0, element.offsetTop);
+    }
   }
 
   return (

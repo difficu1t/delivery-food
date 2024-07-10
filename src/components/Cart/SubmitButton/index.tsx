@@ -6,7 +6,7 @@ import "./index.css"
 
 const SubmitButton = ({ products }: { products: Product[] }) => {
 
-  const [ orderPrice, setOrderPrice] = useState<number>(0);
+  const [ orderPrice, setOrderPrice] = useState(0);
   const { createOrder } = useOrdersActions();
   const navigate = useNavigate();
 
